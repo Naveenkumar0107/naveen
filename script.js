@@ -13,7 +13,7 @@ dobelement.addEventListener("change", () => {
   let Today = new Date();
   age = validateAge(Today, dob);
   if (age < 18 || age > 55) {
-    dobelement.setCustomValidity("age must lie in 18 and 55 years!!!");
+    dobelement.setCustomValidity("Age must lie in 18 and 55 years!!!");
  
     return;
   } else {
@@ -97,7 +97,7 @@ const email = document.getElementById("email");
 email.addEventListener("input", () => validate(email));
 function validate(ele) {
   if (ele.validity.typeMismatch) {
-    ele.setCustomValidity("The Email is not in the right format!!!");
+    ele.setCustomValidity("The Email you have entered is not in the right format!!!");
     ele.reportValidity();
   } else {
     ele.setCustomValidity("");
