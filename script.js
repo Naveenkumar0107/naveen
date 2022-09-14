@@ -13,7 +13,7 @@ dobelement.addEventListener("change", () => {
   let Today = new Date();
   age = validateAge(Today, dob);
   if (age < 18 || age > 55) {
-    dobelement.setCustomValidity("Age must lie between in 18 and 55 years!!!");
+    dobelement.setCustomValidity("Age must lie between 18 and 55 years!!!");
  
     return;
   } else {
